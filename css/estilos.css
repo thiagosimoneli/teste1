@@ -1,0 +1,582 @@
+*{
+	margin:0px;
+	padding:0px;
+	outline:0;
+}
+body{
+	background: url(../images/fundos/lbaa.jpg) #000 no-repeat fixed center top;
+	color:#fff;
+	overflow-x:hidden;
+}
+h1, h2, h3, h4 ,h5, input{
+	font-family: 'Bebas Neue', sans-serif;
+	font-weight:normal;
+}
+p{
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:normal;
+	font-size:12px;
+}
+a, a img, a:hover{
+	color:#FFA800;
+	border:0px;
+	text-decoration:none;
+}
+ul li{
+	list-style-type:none;
+	font-family: font-family: 'Droid Sans', sans-serif;
+}
+form input{
+	float:right;
+	font-size:20px;
+	text-align:right;
+	padding:5px;
+}
+form input[type="text"]{
+	width:100%;
+	height:27px;
+	margin-bottom:9px;
+	border:1px solid #ffa800;
+}
+form input[type="submit"]{
+	padding-right:10px;
+	padding-left:10px;
+	padding-top:2px;
+	height:26px;
+	background:#ffa800;
+	border:0px;
+}
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fontes/BebasNeue-webfont.eot');
+    src: url('../fontes/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontes/BebasNeue-webfont.woff') format('woff'),
+         url('../fontes/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fontes/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*******************TOPO********************/
+#topo{
+	min-width:960px;
+	max-width:1280px;
+	height:134px;	
+	background:url(../images/fundos/topo.jpg);
+	border: 1px solid #767676;
+	border-radius:20px;
+	margin:66px auto auto auto;
+}
+#topo #logo{
+	float:left;
+	height:100px;
+	width:420px;
+	margin-top:12px;
+	margin-left:15px;
+}
+#topo #logo h1{
+	font-size:100px;
+	float:left;
+	color:#ffa800;
+	margin:0px;
+}
+#topo #logo h3{
+	font-size:16px;
+	float:left;
+	color:#037719;
+	text-transform:uppercase;
+	margin-top:47px;
+	margin-left:20px;
+}
+
+/*******************LOGAR********************/
+#topo #log{
+	float:right;
+	width:190px;
+	max-height:100px;
+	margin-top:20px;
+	margin-right:20px;
+}
+/*******************FIM LOGAR********************/
+
+/*******************LOGADO********************/
+#topo #logado{
+	float:right;
+	min-width:190px;
+	margin-top:34px;
+	margin-right:20px;
+}
+#topo #logado p{
+	float:left;
+	font-size:12px;
+	text-align:right;
+	margin-top:10px;
+}
+.perfil{
+	float:left;
+	width:112px;
+	height:28px;
+	padding:1px;
+}
+.perfil:hover{
+	background:#252525;
+}
+.perfil img{
+	width:26px;
+	height:26px;
+	float:left;
+	border:1px solid #000;
+}
+.perfil h1{
+	color:#fff;
+	float:left;
+	padding-left:15px;
+}
+.user_nav{
+	float:left;
+	height:17px;
+	padding:12px 7px 1px 7px;
+	margin-left:4px;
+}
+.user_nav:hover{
+	background:#252525;
+}
+.submenu{
+	position:absolute;
+	z-index:5;
+	height:400px;
+	width:200px;
+	background:#252525;
+	margin-top:30px;
+	margin-left:-52px;
+	border-radius:20px;
+}
+
+/*****************DROPDOWN********************/
+
+#menu {
+	margin-left:110px;
+
+}
+.drop{
+	padding:12px 7px 1px 7px;
+	height:17px;
+}
+.drop:hover{
+	background:#252525;
+}
+
+#menu ul li {
+    line-height:21px;
+}
+#menu li {
+    position:absolute; /* Importante para posicionar o conteúdo do dropdown*/
+}
+#menu li:hover {
+    background:#252525;
+}
+#menu li a {
+    display:block; /* Importante para manter visivel a imagem da 'seta' */
+}
+#menu li .columns {
+    position:absolute; /* Importante para posicionar o conteúdo do dropdown */
+    right:-9999px; /* Esconde o dropdown quando o mouse não está em cima do link */
+    padding:10px 4px 10px 20px;
+    background:#252525;
+    width: 200px;
+	border-radius:20px 0px 20px 20px;
+	z-index:7;
+}
+#menu li:hover .columns{
+    right:0;
+}
+#menu li ul.col{
+    display:inline;
+    float: left;
+    position: relative;
+    padding:0;
+    margin:0 0 12px 0;
+    width:100%;
+}
+#menu li ul.col li {
+    margin:0 0 10px 0;
+    padding:2px 6px;
+    width:85%;
+    border-bottom:1px solid #fff;
+    font-size:12px;
+    height:100%;
+    position:relative;
+    float:none;
+}
+#menu li .col span{
+	font-family: 'Bebas Neue';
+	font-size:35px;
+	color:#fff;
+	text-transform:uppercase;
+	
+}
+#menu li .col li a{
+    font-size:12px;
+    color:#fff;
+}
+#menu li .col li a:hover{
+	color:#FFA800;
+}
+	
+/*****************FIM DO DROPDOWN********************/
+/*****************FIM LOGADO*************************/
+
+/****************************CHAT**************************/
+#chat{
+	position:fixed;
+	width:360px;
+	height:475px;
+	right:-270;
+	z-index:10;
+}
+#chat .but_chat, .fechar{
+	float:left;
+	margin-top:207px;
+	background:#ffa800;
+	width:85px;
+	height:60px;
+	position:relative;
+	z-index:10;
+	margin-right:-20px;
+	cursor:pointer;
+}
+.but_chat h2{
+	float:left;
+	text-align:center;
+	width:60%;
+	color:#000;
+	margin-top:2px;
+	margin-left:2px;
+}
+.but_chat img, .fechar img{
+	float:left;
+	margin-top:12px;
+	margin-left:4px;
+}
+#chat .fechar{
+	width: 39px;
+	margin-right:-40px;
+}
+#chat #msgs_chat{
+	width: 263px;
+	height:473px;
+	background:#464646;
+	border-radius:20px;
+	float:right;
+	padding:15px;
+	position:relative;
+	z-index:9;
+	border: 1px solid #767676;
+}
+#msgs_chat #msg_painel{
+	width:100%;
+	height:319px;
+	background:#fff;
+}
+#msgs_chat #msg_digi{
+	margin-top:15px;
+}
+#msg_digi form textarea{
+	height:100px;
+	width:100%;
+	resize:none;
+	margin-bottom:15px;
+}
+/**************************** FIM CHAT *************************/
+
+/**************************** FIM TOPO *************************/
+
+/****************************SLIDER*************************/
+.slider{
+	min-width:960px;
+	max-width:1280px;
+	min-height:424px;	
+	max-height:720px;
+	margin:19px auto auto auto;
+	border-radius:20px;
+	border: 1px solid #767676;
+}
+
+.slider .imagem img{
+	min-width:960px;
+	max-width:100%;
+	min-height:59%;
+	height:auto;
+	border-radius:20px 20px 0px 0px;
+}
+.slider #nav{
+	min-width:960px;
+	max-width:1280px;
+	height:32px;
+	background:url(../images/fundos/nav.jpg);
+	border-radius:0px 0px 20px 20px;
+}
+/****************************SLIDER *************************/
+
+
+/****************************CONTEUDO *************************/
+#conteudo100{
+	float:left;
+	min-height:396px;	
+	width:100%;
+}
+#conteudo{
+	min-width:960px;
+	max-width:1280px;
+	min-height:396px;	
+	margin:19px auto auto auto;
+	
+}
+#conteudo h1{
+	width:99%;
+	height:41px;
+	background:url(../images/fundos/conth1.jpg);
+	border-radius:20px 20px 0px 0px;
+	border: 1px solid #767676;
+	margin:0px auto auto auto;
+	float:left;
+	font-size:35px;
+	text-transform:uppercase;	
+	text-align:center;
+}
+#conteudo #menu2{
+	width:18%;
+	min-height:430px;
+	background:#464646;
+	border-radius:20px;
+	margin-left: 0px;
+	float: left;
+	padding-bottom:15px;
+}
+#menu2 ul{
+	width:104%;
+	max-width:237px;
+	max-height:100%;
+	float:left;
+	margin-top: 6px;
+}
+#menu2 ul li a{
+	margin-top:7px;
+	width:100%;
+	float:left;
+	height:46px;
+	font-size:25px;
+	font-family: 'Bebas Neue', sans-serif;
+	color:#fff;
+}
+#menu2 ul li a:hover{
+	background:url(../images/icones/menu_hover.png) top right no-repeat;
+	color:#FFA800;
+}
+#menu2 ul li a div{
+	background:url(../images/icones/menu_ln.png) no-repeat bottom center;
+	width:90%;
+	height:35px;
+	padding-left:15px;
+	padding-top:3px;
+}
+#menu2 ul li a div:hover{
+	background:url(../images/icones/menu_lnhover.png) no-repeat bottom center;
+}
+.selected, .selected:hover{
+	background:url(../images/icones/selected.png) top right no-repeat !important;
+	color:#FFA800 !important;
+}
+.selected div, .selected div:hover{
+	background:transparent !important;
+}
+#conteudo #divisao{
+	float:right;
+	min-height:396px;
+	width:82%;
+}
+#divisao #noticias{
+	float:left;
+	width:72%;
+	min-height:396px;
+	background:#464646;
+	border-radius:20px;
+	margin-left:3%;
+	margin-right:3%;
+}
+#noticias h1{
+	padding-left:3px;
+	padding-right: 1px;
+}
+.conts{
+	width:96%;
+	height:auto;
+	float:left;
+	padding:0px 14px 15px 15px;
+}
+.conts .not{
+	height:103px;
+	float:left;
+	width:100%;
+	border-bottom:1px solid #FFA800;
+	padding-bottom:7px;
+	margin-top:13px;
+}
+#noticias .conts .not:last-child{
+	border:0px;
+}
+.conts .not_img{
+	float:left;
+	max-width:188px;
+	min-width:188px;
+	height:97px;
+	margin-right:7px;
+}
+.conts .not_img img{
+	max-width:189px;
+	height:97px;
+}
+.conts .not_txt{
+	float:left;
+	width:530px;
+	height:97px;
+}
+@media screen and (max-width : 1024px) {
+  .conts .not_txt {
+    width: 375px;
+  }
+}
+@media screen and (min-width : 1100px) and (max-width : 1152px) {
+  .conts .not_txt {
+    width:448px;
+  }
+}
+@media screen and (min-width : 1200px) and (max-width : 1280px) {
+  .conts .not_txt {
+    width:520px;
+  }
+}
+
+.not_txt h2{
+	float:left;
+	color:#FFA800;
+	width:100%;
+}
+.not_txt  p{
+	margin-top:7px;
+}
+.botao{
+	padding-right:7px;
+	padding-left:7px;
+	padding-top:5px;
+	height:24px;
+	background:#ffa800;
+	float:right;
+	margin:4px 0px 4px 4px;
+	color:#000;
+	font-size:17px;
+	font-family: 'Bebas Neue', sans-serif;
+}
+.botao:hover{
+	color:#000;
+}
+#divisao #torneios{
+	float:right;
+	display:inline;
+	width:22%;
+	height:auto;
+	background:#464646;
+	border-radius:20px;
+}
+#torneios .conts{
+	width:87%;
+	padding-right:15px;
+}
+#torneios .not{
+	height:126px;
+}
+#torneios .not:last-child{
+	border:0px;
+}
+#torneios .torn_img{
+	width:100%;
+	height:90px;
+	background:#f30;
+	float:left;
+}
+.torn_img img{
+	max-width:200px;
+	height:90px;
+}
+#torneios h2, #torneios p{
+	float:left;
+}
+#torneios h2{
+	width:67%;
+	color:#FFA800;
+}
+#torneios p{
+	width:33%;
+	text-align:right;
+	margin-top:8px;
+}
+.bann{
+	float:right;
+	display:inline;
+	width:22%;
+	height:365px;
+	margin-top:32px;
+	background:#464646;
+	border-radius:20px;
+	padding:15px 0px;
+}
+.mais{
+	width:100%;
+	float:left;
+	height:18px;
+	margin-top:15px;
+	text-align:center;
+}
+.mais .botao{
+	float:none;
+	margin-top:11px;
+	padding-top:3px;
+
+}
+
+/****************************FIM CONTEUDO *************************/
+
+/**************************** FOOTER *************************/
+#footer100{
+	float:left;
+	width:100%;
+}
+#footer{
+	min-width:960px;
+	max-width:1280px;
+	height:86px;	
+	background:url(../images/fundos/rodape.jpg);
+	border-radius:20px;
+	border: 1px solid #767676;
+	margin:19px auto 45px auto;
+}
+.direitos{
+	width:auto;
+	float:left;
+	color:#c3c3c3;
+	margin-top:36px;
+	margin-left:15px;
+}
+.redes{
+	float:right;
+	margin-top:28px;
+	margin-right:15px;
+}
+.redes a{
+	margin-left:5px;
+}
+
+
+/**************************** FIM FOOTER *************************/
